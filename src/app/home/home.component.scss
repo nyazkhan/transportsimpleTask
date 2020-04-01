@@ -1,0 +1,51 @@
+.add-btn{
+	
+    height: 50px;
+    width: 100%;
+    margin: 11px 0px;
+    background-color: #bbbb;
+    :focus {
+        background-color: #ddd;
+    
+    }
+}
+
+.li-item {
+    height: 45px;
+    width: 87%;
+    margin: 11px 17px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  .list-group{
+    height: 35vh;
+    overflow-y: scroll;
+  }
+
+

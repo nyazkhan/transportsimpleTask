@@ -1,0 +1,91 @@
+<div class="main-part">
+
+<div class="container">
+
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="mb-3 mt-2"> From  To<span style="color: red;">*</span></label>
+                    <div class="dropdown show" id="Drpdwn">
+                        <a class=" dropdown-toggle" aria-haspopup="true" data-toggle="dropdown"
+                            aria-expanded="false">
+                            {{selectedFrom}}
+                        </a><hr>
+                        <div class="dropdown-menu">
+                            <div>
+                                <input type="text" id="myInput" #search (keyup)="searchFromList($event , 1)"
+                                    placeholder="Search for items.." title="Type in a name">
+                            </div>
+
+                            <li (click)="addItemFromShow = false" class="list-group-item add-btn">
+                                + Add New
+                            </li>
+                            <div class="input-group mb-3" *ngIf="!addItemFromShow">
+                                <div class="input-container ">
+                                    <input class="input-field" [(ngModel)]="newItemFrom" type="text" placeholder="item"
+                                        name="item">
+
+                                    <i class="fa fa-plus icon" (click)="add(1)"></i>
+                                    <i class="fa fa-remove icon" (click)="remove(1)"></i>
+
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div id="todos">
+                                <ul class="list-group" id="listItem">
+                                    <li class="list-group-item dropdown-item li-item" (click)="setValue(item , 1)"
+                                        *ngFor="let item of fromList;let i = index">
+                                        {{item}}
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="mb-3 mt-2"> Point  To<span style="color: red;">*</span></label>
+                    <div class="dropdown show" id="Drpdwn">
+                        <a class=" dropdown-toggle" aria-haspopup="true" data-toggle="dropdown"
+                            aria-expanded="false">
+                            {{selectedTo}}
+                        </a><hr>
+                        <div class="dropdown-menu">
+                            <div>
+                                <input type="text" id="myInput" #search (keyup)="searchFromList($event , 2)"
+                                    placeholder="Search for items.." title="Type in a name">
+                            </div>
+
+                            <li (click)="addItemToShow = false" class="list-group-item add-btn">
+                                + Add New
+                            </li>
+                            <div class="input-group mb-3" *ngIf="!addItemToShow">
+                                <div class="input-container ">
+                                    <input class="input-field" [(ngModel)]="newItemTo" type="text" placeholder="item"
+                                        name="item">
+
+                                    <i class="fa fa-plus icon" (click)="add(2)"></i>
+                                    <i class="fa fa-remove icon" (click)="remove(2)"></i>
+
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div id="todos">
+                                <ul class="list-group" id="listItem">
+                                    <li class="list-group-item dropdown-item li-item" (click)="setValue(item , 2)"
+                                        *ngFor="let item of toList;let i = index">
+                                        {{item}}
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+</div>
+</div>

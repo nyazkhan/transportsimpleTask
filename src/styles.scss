@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+#myInput {
+    background-size: 19px;
+    background: url(/assets/img/search.png);
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 88%;
+    height: 45px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    /* margin-bottom: 12px; */
+    margin: 2px 17px;
+  }
+  .input-group{
+      width: auto;
+  }
+ 
+  #task{
+    margin: 11px 17px;
+    border-radius: 0px;
+    height: 45px;
+    border-right: 0px;
+  
+  }
+  #add{
+    height: 45px;
+    margin: 11px 0px;
+    border-radius: 0px;
+    border-left: 0px;
+    border-color: #e2e6e9;
+    background-color: #fff;
+  
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 75%;
+  }
+ 
+  .dropdown-menu{
+    width: 40vh;
+    border: 1.3px solid #acaaa4;
+  }
+  body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.main-part {
+
+    // position: relative;
+    height: 100vh;
+    // align-items: center;
+    overflow: hidden;
+}
+  
